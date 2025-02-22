@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "JetBrains Mono", serif;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    background: rgb(17,18,18);
+    background: linear-gradient(180deg, rgba(17,18,18,1) 8%, rgba(36,41,39,1) 38%, rgba(55,66,63,1) 64%, rgba(72,104,96,1) 97%, rgba(69,111,100,1) 100%);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;
+}
+
+header .logo, 
+footer .blocks .logo {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right;
+    width: 30%;
+    font-weight: 200;
+}
+
+header nav ul {
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: white
+}
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 5px;
+    background: #486860;
+    border-radius: 5px;
+    position: relative;
+    top: 3px;
+    left: -10px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid #486860;
+}
+
+header nav ul li.btn a,
+.email .block button {
+    background: #486860;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover,
+.email .block button:hover {
+    background: #3b524c;
+}
+
+.hero {
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero--info {
+    width: 530px;
+    padding-top: 50px;
+}
+
+.hero--info h2 {
+    color: #4b756b;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hero--info h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.hero--info p {
+    font-weight: 400;
+    line-height: 170%;
+    margin: 30px 0;
+}
+
+.hero--info .btn, .hero-projects .info .btn {
+    background: #486860;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: 0;
+    transition: all 500ms ease;
+    font-size: 16px;
+}
+
+.hero--info .btn:hover, .hero-projects .info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background: #3b524c;
+}
+
+.hero img {
+    position: absolute;
+    top: -160px;
+    right: 90px;
+    transform: rotate(-20deg);
+}
+
+/* Include section */
+
+.description {
+    padding-top: 60px;
+}
+
+.description h3 {
+    font-weight: 500;
+    font-size: 31px;
+}
+
+.description .see-all, .projects .see-all {
+    color: white;
+    text-decoration: none;
+    background: #486860;
+    border-radius: 5px;
+    padding: 12px 23px;
+    float: right;
+    display: block;
+    transition: all 500ms ease;
+    z-index: 3;
+}
+
+.description .see-all:hover, .projects .see-all:hover {
+    background: #3b524c;
+    transform: scale(1.1);
+}
+
+.description .features {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.description .features span {
+    display: block;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.description .features span img, 
+footer .blocks ul li img {
+    position: relative;
+    top: 6px;
+    margin-right: 3px;
+}
+
+.big-text {
+    padding: 50px 0;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    width: 800px;
+}
+
+.banner {
+    padding: 80px 0;
+}
+
+.banner h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.banner p {
+    line-height: 170%;
+    margin-bottom: 30px;
+    width: 550px;
+}
+
+.banner img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Image section */
+
+.project {
+    background: url(/img/BackgroundFlowDocs.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.project h3,
+.project p {
+    margin-top: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project h3 {
+    font-size: 30px;
+}
+
+.project .info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project .info .block {
+    text-align: center;
+    width: 25%;
+    margin: 30px 2%;
+}
+
+.project .info .block img {
+    margin-bottom: 15px;
+}
+
+.projects {
+    padding: 100px 0;
+}
+
+.projects h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.projects p {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.projects .images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.projects .images img {
+    height: 320px !important;
+    height: auto;
+    object-fit: fill;
+    border-radius: 15px;
+}
+
+.image-small {
+    width: 310px;
+}
+
+.image-medium {
+    width: 430px;
+}
+
+.image-large {
+    width: 500px;
+}
+
+.projects .see-all {
+    float: none;
+    width: 70px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Bottom section */
+
+.email {
+    padding-bottom: 120px;
+}
+
+.email h3 {
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.email .block {
+    background: #3b4d48;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email .block h4 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.email .block p {
+    width: 530px;
+}
+
+.email .block input {
+    background: white;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 380px;
+    font-family: "JetBrains Mono", serif;
+    font-weight: 400;
+    padding: 20px 30px;
+    position: relative;
+    right: -107px;
+    z-index: 1;
+    padding-right: 120px;
+}
+
+.email .block input::placeholder {
+    color:#273531;
+}
+
+.email .block button {
+    cursor: pointer;
+    border: 0;
+    padding: 13px 17px;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+/* Projects */
+
+.hero-projects {
+    position: relative;
+}
+
+.hero-projects .info {
+    width: 650px;
+    padding: 220px 0;
+}
+
+.hero-projects .info h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.hero-projects .info .btn {
+    margin-top: 20px;
+}
+
+.hero-projects img {
+    position: absolute;
+    right: -160px;
+    top: 0;
+}
+
+.works {
+    padding: 80px 0;
+}
+
+.works h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.works .blocks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.works .blocks .block {
+    width: 25%;
+    border-radius: 10px;
+    padding: 50px 35px;
+    background: #273531;
+}
+
+.works .blocks .block h3 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.works .blocks .block .badge {
+    border-radius: 7px;
+    padding: 10px 25px;
+}
+
+.works .blocks .block .badge.skobeloff {
+    background: #608f7e;
+}
+
+.works .blocks .block .badge.light-green {
+    background: #39554b;
+}
+
+.works .blocks .block .badge.green {
+    background: #1d6047;
+}
+
+/* About Us */
+
+.about {
+    background: url(/img/BackgroundFlowDocs.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.abouts {
+    width: 60%;
+    text-align: center;
+}
+
+.abouts h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.advantages h3 {
+    margin: 20px 0;
+}
+
+.advantage {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.adv {
+    width: 25%;
+    text-align: center;
+}
+
+.adv h4 {
+    font-size: 19px;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+    text-align: left;
+}
+
+.clients h3 {
+    font-size: 25px;
+}
+
+.clients p {
+    font-size: 18px;
+    margin-top: 20px;
+    width: 500px;
+}
+
+.client {
+    width: 230px;
+    line-height: 170%;
+}
+
+.image-content {   
+    width: 35%;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+}
+
+.partners h3 {
+    font-size: 35px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.partner-place {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.place {
+    width: 350px;
+    height: 300px;
+    background: #273531;
+    border-radius: 10px;
+    padding: 40px 25px;
+}
+
+.place h4 {
+    margin: 10px 0;
+}
+
+.partner-place img {
+    width: 100%;
+    object-fit: fill;
+}
+
+
+
+/* Footer */
+
+footer {
+    background: #456f64;
+    padding: 50px 0;
+}
+
+footer .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .blocks p {
+    width: 350px;
+    margin: 15px 0;
+}
+
+footer .blocks h4 {
+    font-weight: 400;
+    font-size: 17px;
+}
+footer .blocks ul {
+    list-style: none;
+}
+
+footer .blocks ul li {
+    margin-top: 9px;
+    opacity: 0.8;
+}
+
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 0.8px;
+    background: white;
+}
+
+footer > p {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+footer > p img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
