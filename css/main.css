@@ -483,7 +483,8 @@ footer .blocks ul li img {
 }
 
 .clients h3 {
-    font-size: 25px;
+    font-size: 30px;
+    width: 330px;
 }
 
 .clients p {
@@ -507,7 +508,7 @@ footer .blocks ul li img {
 }
 
 .partners h3 {
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     margin: 30px 0;
 }
@@ -522,7 +523,7 @@ footer .blocks ul li img {
 .place {
     width: 350px;
     height: 300px;
-    background: #273531;
+    background: #33443f;
     border-radius: 10px;
     padding: 40px 25px;
 }
@@ -536,6 +537,65 @@ footer .blocks ul li img {
     object-fit: fill;
 }
 
+.example {
+    padding: 30px 0;
+}
+
+.example h3 {
+    font-size: 30px;
+}
+
+.example p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.companies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.companie,
+.companie p {
+    text-align: center;
+}
+
+.companie img { 
+    width: 60%;
+    object-fit: fill;
+}
+
+.companie p {
+    font-size: 18px;
+}
+
+.business {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.text {
+    width: 600px;
+}
+
+.text h3,
+.enumeration h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.enumeration ul li {
+    font-size: 22px;
+    list-style-position: inside;
+}
 
 
 /* Footer */
