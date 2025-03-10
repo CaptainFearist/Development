@@ -10,6 +10,7 @@ body {
     font-weight: 400;
     color: white;
     font-size: 16px;
+    background: #39554b;
 }
 
 a {
@@ -35,6 +36,14 @@ img {
 header {
     padding: 50px 0;
 }
+
+/* .logo { 
+    background-image: linear-gradient(  // Делаем градиент 
+        to right, #a8f3f3, #eb04f0
+    );
+    background-clip: text;  // Передаем только на текст
+    color: transparent;
+} */
 
 header .logo, 
 footer .blocks .logo {
@@ -597,6 +606,101 @@ footer .blocks ul li img {
     list-style-position: inside;
 }
 
+/* Contacts */
+
+.hero-contacts h1 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 33px;
+}
+
+.hero-contacts p {
+    text-align: center;
+}
+
+.hero-contacts img {
+    width: 80%;
+    margin: 80px 10%;
+}
+
+.all-contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.follow-us, .phone-number, .leap-point {
+    position: relative; 
+}
+
+.follow-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.follow-us p {
+    margin-bottom: 10px;
+    margin-left: -110px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.socials span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    background: #33443f;
+}
+
+.leap-point, .phone-number {
+    display: flex;
+
+    align-items: center;
+}
+
+.phone-number p {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.leap-point p {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.all-contacts::before, .all-contacts::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 1px;
+    height: 100%;
+    background: white;
+    transform: translateY(-50%);
+}
+
+.all-contacts::before {
+    left: 25%; 
+}
+
+.all-contacts::after {
+    left: 60%; 
+}
 
 /* Footer */
 
