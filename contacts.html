@@ -7,6 +7,7 @@
     <link rel="icon" href="/img/FlowDocs.ico" type="image/x-icon">
     <title>Study Website</title>
     <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/script.js"></script>
 </head>
 <body>
     <header class="container">
@@ -60,22 +61,22 @@
             <div class="names">
                 <div class="first-name">
                     <span>First Name</span>
-                    <input type="text">
+                    <input id="firstName" type="text">
                 </div>
                 <div class="last-name">
                     <span>Last Name</span>
-                    <input type="text">
+                    <input id="lastName" type="text">
                 </div>
             </div>
             <div class="email-input">
                 <span>Email Address</span>
-                <input type="email">
+                <input id="emailAddress" type="email">
             </div>
             <div class="user-message">
                 <span>Message</span>
-                <textarea name="message" id=""></textarea>
+                <textarea id="userMessage" name="message" id=""></textarea>
             </div>
-            <button>Get in touch</button>
+            <button onclick="checkFields()">Get in touch</button>
         </div>
         <img src="/img/Vector-hello2.png" class="background-image top-right" alt="">
         <img src="/img/Vector-hello.png" class="background-image bottom-left" alt="">
@@ -120,6 +121,15 @@
         <hr>
         <p><img src="/img/FlowDocs.ico" alt=""> Copyright® 2024-2025 FlowDocs. All rights Recived.</p>
     </footer>
+
+    <script>
+        function checkEmail() {
+            let email = document.querySelector('#emailField').value;
+            if(!email.includes('@')) alert('Нет символа @');
+            else if(!email.includes('.')) alert('Нет символа .');
+            else alert('Успешно!');
+        }
+    </script>
 
 </body>
 </html>
