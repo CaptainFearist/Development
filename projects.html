@@ -93,5 +93,14 @@
         <p><img src="/img/FlowDocs.ico" alt=""> Copyright® 2024-2025 FlowDocs. All rights Recived.</p>
     </footer>
 
+    <script>
+        function checkEmail() {
+            let email = document.querySelector('#emailField').value;
+            if(!email.includes('@')) alert('Нет символа @');
+            else if(!email.includes('.')) alert('Нет символа .');
+            else alert('Успешно!');
+        }
+    </script>
+
 </body>
 </html>
