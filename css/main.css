@@ -234,7 +234,7 @@ footer .blocks ul li img {
 /* Image section */
 
 .project {
-    background: url(/img/BackgroundFlowDocs.jpg) no-repeat center center fixed;
+    background: url(/assets/img/BackgroundFlowDocs.jpg) no-repeat center center fixed;
     background-size: cover;
     padding: 80px 0;
 }
@@ -462,7 +462,7 @@ footer .blocks ul li img {
 /* About Us */
 
 .about {
-    background: url(/img/BackgroundFlowDocs.jpg) no-repeat center center fixed;
+    background: url(/assets/img/BackgroundFlowDocs.jpg) no-repeat center center fixed;
     background-size: cover;
     padding: 80px 0;
 }
