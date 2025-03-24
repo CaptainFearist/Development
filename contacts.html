@@ -93,9 +93,10 @@
                 <h4>Stay in the loop</h4>
                 <p>Sign up for our newsletter, there's lots of interesting stuff, from using services, to new features</p>  
             </div>
-            <div>
+            <div class="input-container">
                 <input id="emailField" type="email" placeholder="Enter email address">
                 <button onclick="checkEmail()">Continue</button>
+                <span id="emailError" class="error">Некорректный email</span>
             </div>
         </div>
     </div>
@@ -124,15 +125,6 @@
         <hr>
         <p><img src="/img/FlowDocs.ico" alt=""> Copyright® 2024-2025 FlowDocs. All rights Recived.</p>
     </footer>
-
-    <script>
-        function checkEmail() {
-            let email = document.querySelector('#emailField').value;
-            if(!email.includes('@')) alert('Нет символа @');
-            else if(!email.includes('.')) alert('Нет символа .');
-            else alert('Успешно!');
-        }
-    </script>
 
 </body>
 </html>
