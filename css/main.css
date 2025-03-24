@@ -836,6 +836,12 @@ footer .blocks ul li img {
     left: 0;
 }
 
+.error {
+    color: #e45164;
+    font-size: 12px;
+    display: none;
+}
+
 /* Footer */
 
 footer {
