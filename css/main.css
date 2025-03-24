@@ -374,6 +374,20 @@ footer .blocks ul li img {
     color: white;
 }
 
+.email .block .input-container {
+    position: relative;
+}
+
+.email .block .error {
+    color:#e45164;
+    font-size: 12px;
+    position: absolute;
+    top: 100%;
+    left: 106px;
+    margin-top: 5px;
+    display: none;
+}
+
 /* Projects */
 
 .hero-projects {
@@ -837,7 +851,7 @@ footer .blocks ul li img {
 }
 
 .error {
-    color: #e45164;
+    color: #d1495b;
     font-size: 12px;
     display: none;
 }
