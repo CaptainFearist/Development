@@ -60,3 +60,26 @@ function checkFields() {
     alert(`Мы получили ваще сообщение`);
 }
 
+function checkEmail() {
+    let email = document.querySelector('#emailField').value;
+    let emailError = document.querySelector(`#emailError`);
+    emailError.style.display = `none`;
+    if(!email.includes('@')) {
+        emailError.textContent = `Нет символа @`;
+        emailError.style.display = `block`;
+        setTimeout(function(){
+            emailError.style.display = `none`;
+        }, 3000);
+        return;
+    }
+    if (!email.includes('.')) {
+        emailError.textContent = `Нет символа .`;
+        emailError.style.display = `block`;
+        setTimeout(function(){
+            emailError.style.display = `none`;
+        }, 3000);
+        return;
+    }
+
+    alert('Успешно!');
+}
